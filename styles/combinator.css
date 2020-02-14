@@ -1,0 +1,39 @@
+.bold {
+    color: brown;
+    font-size: 20px;
+}
+.bolder {
+    font-size: 40px;
+}
+div {
+    font-size: 35px;
+    width: 800px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+div > span {
+    color: green;
+}
+
+.first + div {
+    border: 1px solid blue;
+}
+
+.second ~ div {
+    font-size: 24px;
+}
+
+.first ~ p {
+    font-size: 50px;
+}
+
+div:hover {
+    /* cursor: pointer; */
+    /* background-color: aqua; */
+}
+div::selection, div::first-letter {
+    background-color: rgba(148, 65, 65, 0.3) !important;
+}
